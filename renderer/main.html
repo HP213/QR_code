@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>QRcode Generator</title>
+
+    <link rel="stylesheet" href="../bower_components/bulma/css/bulma.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+
+    <div class="panel">
+
+      <div class="panel-heading">
+        <div class="control is-grouped">
+          <p class="control">
+            <a class="button is-primary open-add-modal">
+              <span class="icon is-small">
+                <i class="fa fa-plus"></i>
+              </span>
+            </a>
+          </p>
+          <p class="control is-expanded has-icon has-icon-right">
+            <input class="input" id="search" type="text">
+            <span class="icon is-small">
+              <i class="fa fa-search"></i>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div id="read-list" class="empty">
+        <p id="no-items" class="has-text-centered">No Items</p>
+      </div>
+
+    </div>
+
+    <div id="add-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+
+        <p class="control has-icon has-icon-right">
+          <input class="input is-medium" type="text" id="item-input" placeholder="Enter Product Name">
+          <span class="icon">
+            <i class="fa fa-product-hunt"></i>
+          </span>
+        </p>
+
+        <p class="control has-icon has-icon-right">
+          <input class="input is-medium" type="text" id="batch-input" placeholder="Enter Batch No.">
+          <span class="icon">
+            <i class="fa fa-globe"></i>
+          </span>
+        </p>
+
+        <p class="control has-icon has-icon-right">
+          <input class="input is-medium" type="text" id="number-input" placeholder="Enter No.of  QRcodes">
+          <span class="icon">
+            <i class="fa fa-500px"></i>
+          </span>
+        </p>
+
+        <p class="field">
+          <label class="label">Packing</label>
+          <div class="control">
+        <div class="select" >
+            <select id="qty-input">
+        <option>5Ltr.</option>
+        <option>1Ltr.</option>
+        <option>500ml</option>
+        <option>100ml</option>
+        <option>10ml</option>
+            </select>
+            </div>
+        </div>
+      </p>
+
+        <div class="control is-grouped">
+          <p class="control">
+            <a class="button is-primary" id="add-button">
+              <span class="icon is-small">
+                <i class="fa fa-plus"></i>
+              </span>
+              <span><strong>Get Codes</strong></span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button close-add-modal">Cancel</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+  <script>
+
+    // jQuery
+    $ = require('jquery')
+
+    // Main app script
+    require('./app')
+
+  </script>
+</html>

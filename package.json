@@ -1,0 +1,21 @@
+{
+  "name": "QRCODE",
+  "version": "1.0.0",
+  "description": "Initials",
+  "main": "main.js",
+  "author": "Harsh Bansal",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/electron ."
+  },
+  "devDependencies": {
+    "electron": "^4.0.1",
+    "electron-packager": "^13.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "md5": "^2.2.1",
+    "mongoose": "^5.4.4",
+    "query-string": "^6.2.0"
+  }
+}
