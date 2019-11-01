@@ -15,7 +15,7 @@
   "dependencies": {
     "jquery": ">=3.4.0",
     "md5": "^2.2.1",
-    "mongoose": "^5.4.4",
+    "mongoose": "^5.7.5",
     "query-string": "^6.2.0"
   }
 }
