@@ -13,7 +13,7 @@
     "electron-packager": "^13.0.1"
   },
   "dependencies": {
-    "jquery": ">=3.4.0",
+    "jquery": ">=3.5.0",
     "md5": "^2.2.1",
     "mongoose": "^5.4.4",
     "query-string": "^6.2.0"
